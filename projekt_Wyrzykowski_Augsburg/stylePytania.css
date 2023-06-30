@@ -1,0 +1,158 @@
+:root{
+    --color-dark: rgb(83, 40, 15);
+    --color-light: rgb(196, 156, 83);
+}
+*{
+    margin: 0;
+	padding: 0;
+}
+body
+{
+	background: var(--color-light);
+    background: linear-gradient(to top left,var(--color-dark), var(--color-light));
+	font-family: Helvetica, sans-serif;
+}
+h2
+{
+	text-align: center;
+	margin-left: 190px;
+}
+a:link
+{
+	color: white;
+}
+a:visited
+{
+	color: white;
+}
+.koszykbtn
+{
+	clear:right;
+	size: 100px;
+	transition-duration: 0.4s;
+	padding: 20px;
+	border-radius: 12px;
+	display: block;
+	cursor: pointer;
+	float:right;
+}
+.przyciski
+{	
+	text-align: center;
+	margin-left: 550px;
+	height: 65px;
+	width: 40%;
+	background-color: transparent;
+	size: 100px;
+	transition-duration: 0.4s;
+	padding: 20px;
+	border-radius: 12px;
+	float:left;
+}
+.button {
+	font-size: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 30px;
+}
+
+.button:hover {
+    background-color: #01ffd5;
+}
+.przycisk_rozwijany {
+    position: relative;
+    display: inline-block;
+    font-size: 140%;
+    cursor: pointer;
+}
+.lista {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    text-align: left;
+}
+
+.przycisk_rozwijany:hover .lista {
+    display: block;
+    cursor: pointer;
+}
+.przycisk_rozwijany:hover .lista {
+    display: block;
+    cursor: pointer;
+}
+#ul1
+{
+    list-style-type: none;
+    background:linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.10),
+        rgba(255, 255, 255, 0.25)
+    );
+    width: 1250px;
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 40px;
+    margin-left: 250px;
+    float:left;
+}
+.towar 
+{
+    border:1px solid;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    width: 355px;
+    height: 200px;
+    margin-left: 30px;
+    float:left;
+}
+#tresc
+{
+    margin-left: 80px;
+    width: 200px;
+}
+main
+{
+    height: 950px;
+    float:left;
+}
+footer
+{
+    clear: both;
+    text-align: center;
+}
+h1
+{
+    text-align: center;
+}
+.koszykbtn
+{
+	clear:right;
+	size: 100px;
+	transition-duration: 0.4s;
+	padding: 20px;
+	border-radius: 12px;
+    color:white;
+	display: block;
+	cursor: pointer;
+	float:right;
+}
+.b
+{
+    float: left;
+}
+.c
+{
+    text-align: right;
+}
+hr
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

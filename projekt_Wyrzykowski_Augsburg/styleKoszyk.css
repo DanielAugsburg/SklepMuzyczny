@@ -1,0 +1,183 @@
+:root{
+    --color-dark: rgb(83, 40, 15);
+    --color-light: rgb(196, 156, 83);
+}
+*{
+    margin: 0;
+	padding: 0;
+}
+body
+{
+    
+    background: var(--color-light);
+    background: linear-gradient(to top left,var(--color-dark), var(--color-light));
+	font-family: Helvetica, sans-serif;
+    height: 860px;
+}
+table{
+    border: 30px solid #4b2b02;
+    border-collapse: collapse;
+    width: 756px;
+    margin-top: 50px;
+	font-family: sans-serif;
+	background:linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.10),
+        rgba(255, 255, 255, 0.45)
+    );
+    text-align: center;
+	padding-bottom: 30px;
+	text-shadow: 0 0 1px #000;
+}
+
+
+input {
+    background:linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.10),
+        rgba(255, 255, 255, 0.45)
+    );
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0px 8px 24xpx 0 rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 12px 24px;
+}
+
+input:hover {
+    background-color: #4b2b02;
+
+}
+table, td, tr
+{
+    margin-left: 50px;
+    border:solid;
+}
+table
+{
+    float:left;
+}
+table input
+{
+    float:left;
+    margin-left: 50px;
+}
+input[type=submit]
+{
+float:left;
+}
+#btnczysc
+{
+    float:left;
+    margin-top:30px;
+    margin-left: 480px;
+}
+input[type=number]
+{
+text-align:center;
+}
+#test
+{
+  width: 150px;
+  height: 150px;  
+}
+#wysylka
+{   
+    float:left;
+    margin-top: 200px;
+    position: absolute;
+    margin-right: 200px;
+    border: 3px solid;
+    border-radius: 25px;
+    margin-left: 950px;
+    text-align: center;
+}
+#wysylka input
+{
+    width: 200px;
+    margin-left: 10px;
+}
+#btnpolicz
+{
+    clear:both;
+}
+#btnwysylka
+{
+    margin-top: 30px;
+    margin-left:200px;
+}
+.przyciski
+{	
+	text-align: center;
+	margin-left: 550px;
+	height: 65px;
+	width: 40%;
+	background-color: transparent;
+	size: 100px;
+	transition-duration: 0.4s;
+	padding: 20px;
+	border-radius: 12px;
+	float:left;
+}
+.button {
+	font-size: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 30px;
+}
+
+.button:hover {
+    background-color: #01ffd5;
+}
+.przycisk_rozwijany {
+    position: relative;
+    display: inline-block;
+    font-size: 140%;
+    cursor: pointer;
+}
+.lista {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    text-align: left;
+}
+
+.przycisk_rozwijany:hover .lista {
+    display: block;
+    cursor: pointer;
+}
+.przycisk_rozwijany:hover .lista {
+    display: block;
+    cursor: pointer;
+}
+::placeholder {
+    color:white;
+}
+#zamow {
+    background:linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.10),
+        rgba(255, 255, 255, 0.45)
+    );
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0px 8px 24xpx 0 rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 12px 24px;
+    clear:both;
+    margin-top: 30px;
+    margin-left: 50px;
+    float:left;
+}
+
+#zamow:hover {
+    background-color: #4b2b02;
+
+}

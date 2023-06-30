@@ -1,0 +1,134 @@
+:root{
+    --color-dark: rgb(83, 40, 15);
+    --color-light: rgb(196, 156, 83);
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    background: var(--color-light);
+    background: linear-gradient(to top left,var(--color-dark), var(--color-light));
+    height: 100vh;
+    justify-content:  center;
+    overflow: hidden;
+    width: 100vw;
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    display: flex;
+}
+
+form {
+    background:linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.10),
+        rgba(255, 255, 255, 0.45)
+    );
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0px 8px 24xpx 0 rgba(255, 255, 255, 0.3);
+    max-width: 300px;
+    padding: 36px 24px;
+    text-align: center;
+}
+input,button{
+    background:linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.10),
+        rgba(255, 255, 255, 0.45)
+    );
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0px 8px 24xpx 0 rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 12px 24px;
+    
+
+}
+input{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+label{
+    color: rgb(255, 255, 255);
+    left: 40%;
+    font-style: italic;
+    position: absolute;     
+    transform: translateY(40%);
+    transition: left 0.3s, opacity 0.3s;
+}
+input:focus + label{
+    left:100px;
+    opacity: 0;
+}
+.belka{
+    background: rgba(255, 255, 255, 0.55);
+    
+    height: 2px;
+    margin: 0 auto 32px;
+    width: 100%;
+}
+
+.bg {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.bg__dot {
+    background: linear-gradient(
+        to  right,
+        var(--color-light),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+.bg__dot:nth-child(1) {
+    animation: move1 10s linear infinite;
+    height: 50vh;
+
+    left: 0;
+    position: absolute;
+    
+    width: 50vh;
+}
+
+
+.bg__dot:nth-child(2) {
+    animation: move2 15s linear infinite;
+    height: 30vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 30vh;
+}
+
+@keyframes move1{
+    from {transform: translateY(-50vh);}
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+
+@keyframes move2{
+    from {transform: translateY(100vh);}
+    to {
+        transform: translateY(-80vh);
+    }
+}
+
+::placeholder {
+    color:white;
+}
